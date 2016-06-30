@@ -1,0 +1,12 @@
+def file_stats():
+    long = 'x'
+    f = open("data.txt")
+    for line in f:
+        if len(line) > len(long):
+            long = line
+    print(long)
+    f.close()
+
+
+
+file_stats()
